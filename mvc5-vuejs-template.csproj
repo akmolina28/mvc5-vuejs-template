@@ -159,6 +159,8 @@
     <Content Include="package.json" />
     <Content Include=".eslintrc.json" />
     <Content Include="jsconfig.json" />
+    <Content Include="LICENSE" />
+    <Content Include="README.md" />
     <None Include="src\components\HelloWorld.vue" />
     <Content Include="src\index.html" />
     <Content Include="src\js\app.js" />
