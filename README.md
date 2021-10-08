@@ -1,16 +1,12 @@
 # mvc5-vuejs-template
 ASP.NET MVC 5 starter project with Vue.js frontend. Single-page application with client-side routing.
 
-<br>
-
 # Clone and Build
 
 The only dependencies for this template are recent versions of Visual Studio and [Node.js](https://nodejs.org/en/).
 
 1. Clone the repo
 2. Build/Debug the project using Visual Studio
-
-<br>
 
 # Hot Reloading
 
@@ -31,8 +27,6 @@ http://localhost:8080
 ```
 
 3. Edit and save any .vue, .js, or .scss to utilize hot reloading.
-
-<br>
 
 # Additional Information
 
@@ -67,3 +61,4 @@ The MSBuild process has been modified to automatically run webpack whenever the 
 This template also includes [ESLint](https://eslint.org/) integrated in the webpack build. Building the project will automatically lint the source code. The prod configuration will error out on lint errors, but the dev build will only log warnings. If you have problems with the build, check the output for possible lint errors.
 
 
+<a href="https://www.buymeacoffee.com/akmolina28" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 144px !important;" ></a>
