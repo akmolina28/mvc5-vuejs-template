@@ -15,7 +15,7 @@ module.exports = {
     clean: true,
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist',
-    filename: '[name].bundle.[contenthash].js',
+    filename: '[name].bundle.[contenthash].js', // cache-bust
   },
   resolve: {
     // point bundler to the vue template compiler
@@ -53,10 +53,12 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: {
+      // SPA fallback route
       index: '/dist/index.html',
     },
     proxy: [
       {
+        // Proxy api routes to IIS Express
         context: '/api/**',
         target: 'http://localhost:64373',
       }
@@ -65,7 +67,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].bundle.[contenthash].css',
+      filename: 'css/[name].bundle.[contenthash].css', // cache-bust
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
@@ -76,7 +78,7 @@ module.exports = {
     new ESLintWebpackPlugin({
       files: ['src'],
       extensions: ['js', 'vue'],
-      failOnError: false
+      failOnError: false // just show warnings for dev builds
     }),
   ],
 };

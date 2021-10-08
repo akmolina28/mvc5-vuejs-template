@@ -15,7 +15,7 @@ module.exports = mergeWithCustomize({
     new ESLintWebpackPlugin({
       files: ['src'],
       extensions: ['js', 'vue'],
-      failOnError: true
+      failOnError: true // block the build on lint error
     }),
   ],
 });
