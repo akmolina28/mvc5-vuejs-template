@@ -1,6 +1,8 @@
 # mvc5-vuejs-template
 ASP.NET MVC 5 starter project with Vue.js frontend. Single-page application with client-side routing.
 
+*** Full write-up now available *** https://kleypot.com/vue-js-single-page-application-asp-net-mvc-5/
+
 ## Clone and Build
 
 The only dependencies for this template are recent versions of Visual Studio and [Node.js](https://nodejs.org/en/).
